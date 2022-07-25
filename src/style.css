@@ -1,13 +1,16 @@
-@font-face {
-    font-family: vtksBold;
-    src: url(vtksBold&Cool.ttf);
-}
 body {
     min-height: 100vh;
     background-image: url(backgroundgator.png);
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 36px;
 }
 .header{
     box-sizing: border-box;
@@ -24,6 +27,7 @@ body {
    align-items: end;
    justify-content: space-evenly;
     overflow: hidden;
+    z-index: 1;
 }
 .nav-tab{
     width: 128px;
@@ -39,8 +43,12 @@ body {
     align-items: center;
     position: relative;
     top: 4px;
-    cursor: pointer;
-    
+    cursor: pointer;  
+}
+.selected{
+    background-color: #557C25;
+    border: 2px solid #dcffe1;
+    color: white;
 }
 #content {
     height: 100vh;
@@ -60,4 +68,10 @@ body {
 a{
     text-decoration: none;
     color: black;
+}
+@media(max-width: 600px){
+    .nav-tab{
+        width: 84px;
+        font-size: 0.8rem;
+    }
 }

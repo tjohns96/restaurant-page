@@ -1,0 +1,72 @@
+@font-face {
+    font-family: BananaCountry;
+    src: url(BananaCountry-BWm78.ttf);
+}
+
+@font-face {
+    font-family: Mattew;
+    src: url(Mattew-lgWpe.otf);
+}
+
+.title {
+    font-family: BananaCountry;
+    font-size: 3rem;
+    height: 64px;
+}
+
+.welcome {
+    width: 80%;
+    min-height: 300px;
+    border: 8px solid #557C25;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Mattew;
+    font-size: 1.5rem;
+    padding: 24px;
+    line-height: 2.0;
+}
+
+.bottom-deco {
+    position: absolute;
+    bottom: -114px;
+    left: 0px;
+}
+
+.top-deco {
+    position: absolute;
+    top: -140px;
+    right: -36px;
+}
+
+.hours{
+    border: 8px solid #557C25;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 24px 0px;
+    font-size: 1.2rem;
+}
+
+@media(max-width: 600px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    .hours{
+        font-size: 0.8rem;
+        padding: 12px 0px;
+    }
+}
+
+@media(max-width: 900px) {
+    .welcome {
+        height: 430px;
+        line-height: normal;
+        font-size: 1.2rem;
+    }
+}
