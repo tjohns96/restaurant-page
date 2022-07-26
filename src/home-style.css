@@ -38,9 +38,11 @@
     position: absolute;
     top: -140px;
     right: -36px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
-.hours{
+.hours {
     border: 8px solid #557C25;
     width: 50%;
     display: flex;
@@ -57,9 +59,11 @@
     .title {
         font-size: 1.5rem;
     }
-    .hours{
+
+    .hours {
         font-size: 0.8rem;
         padding: 12px 0px;
+        width: 70%;
     }
 }
 
@@ -67,6 +71,6 @@
     .welcome {
         height: 430px;
         line-height: normal;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
