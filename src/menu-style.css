@@ -9,14 +9,16 @@
     height: 32px;
     margin: 24px 0px 16px;
 }
-.section-head{
+
+.section-head {
     margin: 0;
     font-family: BananaCountry;
     font-size: 2rem;
     margin-left: 12.5%;
     margin-right: auto;
 }
-.side{
+
+.side {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
@@ -24,7 +26,8 @@
     margin-left: 12.5%;
     margin-right: auto;
 }
-.menu-item{
+
+.menu-item {
     width: 75%;
     height: 164px;
     display: grid;
@@ -32,41 +35,48 @@
     grid-template-rows: 1fr 2fr;
     border: 2px solid black;
     grid-template-areas: 'foodImg name'
-                         'foodImg description';
+        'foodImg description';
 }
-.menu-item>img{
+
+.menu-item>img {
     grid-area: foodImg;
 }
 
-.item-name{
+.item-name {
     grid-area: name;
     font-family: BananaCountry;
     font-size: 1.5rem;
-    margin-top: 16px;   
+    margin-top: 16px;
 }
-.description{
+
+.description {
     grid-area: description;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin: 0px;
 }
-.description, .item-name{
+
+.description, .item-name {
     justify-self: start;
     margin-left: 16px;
 }
-@media(max-width: 750px){
-    .menu-item{
+
+@media(max-width: 750px) {
+    .menu-item {
         width: 100%;
     }
-    .item-name{
+
+    .item-name {
         font-size: 1rem;
     }
-    .description{
+
+    .description {
         font-size: 0.7rem;
     }
 }
-@media(max-width: 400px){
-    .description{
+
+@media(max-width: 400px) {
+    .description {
         font-size: 0.5rem;
     }
 }

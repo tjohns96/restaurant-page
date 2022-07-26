@@ -2,6 +2,7 @@ import '../node_modules/normalize.css/normalize.css';
 import './menu-style.css';
 export default function createMenuPage(){
     const content = document.querySelector('#content');
+    content.classList.remove('content-contact');
     const title = document.createElement('p');
     title.classList.add('title');
     title.textContent = "Menu";

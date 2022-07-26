@@ -1,5 +1,6 @@
 import createHomePage from './home.js';
 import createMenuPage from './menu.js';
+import createContactPage from './contact.js';
 import '../node_modules/normalize.css/normalize.css';
 import './style.css';
 const tabs = document.querySelectorAll('.nav-tab');
@@ -22,6 +23,15 @@ menuBtn.addEventListener('click', ()=>{
     else{
         document.querySelectorAll('#content>*').forEach(item => item.parentElement.removeChild(item));
         createMenuPage();
+    }
+});
+contactBtn.addEventListener('click', ()=>{
+    if(contactBtn.classList.contains('selected')){
+        return;
+    }
+    else{
+        document.querySelectorAll('#content>*').forEach(item => item.parentElement.removeChild(item));
+        createContactPage();
     }
 });
 tabs.forEach((tab) => tab.addEventListener('click', () =>{
