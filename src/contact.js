@@ -5,7 +5,7 @@ export default function createContactPage() {
     content.setAttribute('class', 'content-contact')
     const title = document.createElement('p');
     title.textContent = 'Contact us';
-    title.classList.add('title');
+    title.classList.add('contact-title');
     const form = document.createElement('form');
     const submit = document.createElement('button');
     const submitConfirm = document.createElement('span');

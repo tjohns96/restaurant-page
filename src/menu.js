@@ -1,10 +1,19 @@
 import '../node_modules/normalize.css/normalize.css';
 import './menu-style.css';
+import Burger from './burger.jpg';
+import ChickenTenders from './chickenTenderPlatter.jpg';
+import Chili from './chili.jpg';
+import FishChips from './fishAndChips.jpg';
+import FriedShrimp from './friedShrimpPlatter.jpg';
+import GatorNuggets from './gatorNuggets.jpeg';
+import GatorStew from './gatorStew.jpg';
+import Ribs from './ribs.jpg';
+import ShrimpGumbo from './shrimpGumbo.jpg'
 export default function createMenuPage(){
     const content = document.querySelector('#content');
     content.classList.remove('content-contact');
     const title = document.createElement('p');
-    title.classList.add('title');
+    title.classList.add('menu-title');
     title.textContent = "Menu";
     const platterSect = document.createElement('p');
     const platterSide = document.createElement('p');
@@ -30,23 +39,23 @@ export default function createMenuPage(){
     let containers = [burgerContainer, gatorNuggetsContainer, gatorStewContainer, chiliContainer, tenderPlatterContainer, ribsContainer, shrimpGumboContainer, fishChipsContainer, friedShrimpContainer];
     containers.forEach(container => container.classList.add('menu-item'));
     const burgerImg = document.createElement('img');
-    burgerImg.src = '../src/burger.jpg';
+    burgerImg.src = Burger;
     const gatorNuggetsImg = document.createElement('img');
-    gatorNuggetsImg.src = '../src/gatorNuggets.jpeg'
+    gatorNuggetsImg.src = GatorNuggets;
     const gatorStewImg = document.createElement('img');
-    gatorStewImg.src = '../src/gatorStew.jpg';
+    gatorStewImg.src = GatorStew;
     const chiliImg = document.createElement('img');
-    chiliImg.src = '../src/chili.jpg';
+    chiliImg.src = Chili;
     const tenderPlatterImg = document.createElement('img');
-    tenderPlatterImg.src = '../src/chickenTenderPlatter.jpg'
+    tenderPlatterImg.src = ChickenTenders;
     const ribsImg = document.createElement('img');
-    ribsImg.src = '../src/ribs.jpg'
+    ribsImg.src = Ribs;
     const shrimpGumboImg = document.createElement('img');
-    shrimpGumboImg.src = '../src/shrimpGumbo.jpg'
+    shrimpGumboImg.src = ShrimpGumbo;
     const fishChipsImg = document.createElement('img');
-    fishChipsImg.src = '../src/fishAndChips.jpg';
+    fishChipsImg.src = FishChips;
     const friedShrimpImg = document.createElement('img');
-    friedShrimpImg.src = '../src/friedShrimpPlatter.jpg';
+    friedShrimpImg.src = FriedShrimp;
     const burgerName = document.createElement('p');
     burgerName.textContent = "Cheeseburger";
     const friedShrimpName = document.createElement('p');

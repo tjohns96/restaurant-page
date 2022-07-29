@@ -1,16 +1,17 @@
 import '../node_modules/normalize.css/normalize.css';
 import './home-style.css';
+import Gator from './crocodile2_larger.png';
 export default function createHomePage() {
     const content = document.querySelector("#content");
     content.classList.remove('content-contact');
     const title = document.createElement('p');
-    title.classList.add('title');
+    title.classList.add('home-title');
     title.textContent = 'The Gator Garden';
     const welcomeBlurb = document.createElement('div');
     welcomeBlurb.classList.add('welcome');
     welcomeBlurb.textContent = "Welcome to The Gator Garden, home of South Florida's best country bites since 1982. Enjoy juicy burgers, fresh and high-quality seafood, or some of our signature gator plates! Nothing tastes like home like some good gator. Come into our swamp and have a good time!"
     const gatorImg = document.createElement('img');
-    gatorImg.src = '../src/crocodile2_larger.png';
+    gatorImg.src = Gator;
     const gatorImg2 = gatorImg.cloneNode(true);
     gatorImg.classList.add('bottom-deco');
     gatorImg2.classList.add('top-deco');
